@@ -1,5 +1,3 @@
-
-
 public class TarjetaDeCredito {
     private String entidadFinancieraEmisora;
     private String entidadBancaria;

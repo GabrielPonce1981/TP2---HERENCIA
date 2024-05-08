@@ -1,4 +1,3 @@
-
 public class Titular {
     private String dni;
     private String nombre;
