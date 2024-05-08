@@ -1,22 +1,64 @@
-public class TarjetadeCredito {
-    private String numeroTarjeta;
-    private String entidademisora;
+
+
+public class TarjetaDeCredito {
+    private String entidadFinancieraEmisora;
+    private String entidadBancaria;
+    private String numeroDeTarjeta;
+    private double saldoDisponible;
     private Titular titular;
-    private double saldodisponible;
-    
-    
-    
-    
-    public TarjetadeCredito(String numeroTarjeta, String entidademisora, double monto, Titular titular) {
-        this.numeroTarjeta = numeroTarjeta;
-        this.entidademisora = entidademisora;
+
+    public TarjetaDeCredito(String entidadFinancieraEmisora, String entidadBancaria, String numeroDeTarjeta, double saldoDisponible, Titular titular){
+        this.entidadFinancieraEmisora = entidadFinancieraEmisora;
+        this.entidadBancaria = entidadBancaria;
+        this.numeroDeTarjeta = numeroDeTarjeta;
+        this.saldoDisponible = saldoDisponible;
         this.titular = titular;
-        this.saldodisponible = monto;
+    
     }
 
-    public boolean tienesaldo(int montoacobrar) {
-        return saldodisponible >= montoacobrar;
+    public String getEntidadFinancieraEmisora() {
+        return entidadFinancieraEmisora;
+    }
+
+    public void setEntidadFinancieraEmisora(String entidadFinancieraEmisora) {
+        this.entidadFinancieraEmisora = entidadFinancieraEmisora;
+    }
+
+    public String getEntidadBancaria() {
+        return entidadBancaria;
+    }
+
+    public void setEntidadBancaria(String entidadBancaria) {
+        this.entidadBancaria = entidadBancaria;
+    }
+
+    public String getNumeroDeTarjeta() {
+        return numeroDeTarjeta;
+    }
+
+    public void setNumeroDeTarjeta(String numeroDeTarjeta) {
+        this.numeroDeTarjeta = numeroDeTarjeta;
+    }
+
+    public double getSaldoDisponible() {
+        return saldoDisponible;
+    }
+
+    public void setSaldoDisponible(double saldoDisponible) {
+        this.saldoDisponible = saldoDisponible;
+    }
+
+    public Titular getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Titular titular) {
+        this.titular = titular;
     }
 
     
+
+
+
 }
+
