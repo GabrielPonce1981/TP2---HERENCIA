@@ -2,8 +2,8 @@ public class Vendedores extends Empleado {
     private double ventasMensuales;
  
     
-    public Vendedores( String dni, String nombre, String domicilio, int fechaIngreso, double ventasMensuales, double sueldoBasico) {
-        super(dni, nombre, domicilio, fechaIngreso, sueldoBasico);
+    public Vendedores( String dni, String nombre, String domicilio, int fechaIngreso, double ventasMensuales, double sueldoBasico, Categoria categoria) {
+        super(dni, nombre, domicilio, fechaIngreso, sueldoBasico, categoria);
         this.ventasMensuales = ventasMensuales;
     }
 
@@ -17,6 +17,7 @@ public class Vendedores extends Empleado {
 
     public void setVentasMensuales(double ventasMensuales) {
         this.ventasMensuales = ventasMensuales;
+    
     }
 
 
