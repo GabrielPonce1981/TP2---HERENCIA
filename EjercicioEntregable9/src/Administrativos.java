@@ -1,8 +1,8 @@
 public class Administrativos extends Empleado {
     private String jornadaLaboral;
 
-        public Administrativos(String dni, String nombre,  String domicilio, int fechaIngreso, String jornadaLaboral, double sueldoBasico, Categoria categoria) {
-            super(dni, nombre, domicilio, fechaIngreso, sueldoBasico, categoria);
+        public Administrativos(String dni, String nombre,  String domicilio, int fechaIngreso, String jornadaLaboral, double sueldoBasico) {
+            super(dni, nombre, domicilio, fechaIngreso, sueldoBasico);
             this.jornadaLaboral = jornadaLaboral;
 
         }

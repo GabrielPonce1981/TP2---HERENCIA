@@ -4,16 +4,14 @@ public class Empleado {
     private String domicilio;
     private int fechaIngreso;
     protected double sueldoBasico;
-    Categoria categoria;
 
     
-    public Empleado(String dni, String nombre, String domicilio, int fechaIngreso, double sueldoBasico, Categoria categoria) {
+    public Empleado(String dni, String nombre, String domicilio, int fechaIngreso, double sueldoBasico) {
         this.dni = dni;
         this.nombre = nombre;
         this.domicilio = domicilio;
         this.fechaIngreso = fechaIngreso;
-        this.sueldoBasico = sueldoBasico;
-        this.categoria = categoria;    
+        this.sueldoBasico = sueldoBasico;  
     }
 
 

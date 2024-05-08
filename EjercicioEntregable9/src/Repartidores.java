@@ -1,8 +1,8 @@
 public class Repartidores extends Empleado {
     private int repartosExtras;
 
-        public Repartidores(String dni, String nombre, String domicilio, int fechaIngreso, double sueldoBasico, int repartosExtras, Categoria categoria) {
-            super( dni, nombre, domicilio, fechaIngreso, sueldoBasico, categoria);
+        public Repartidores(String dni, String nombre, String domicilio, int fechaIngreso, double sueldoBasico, int repartosExtras) {
+            super( dni, nombre, domicilio, fechaIngreso, sueldoBasico);
             this.repartosExtras = repartosExtras;
         }
 
