@@ -1,3 +1,4 @@
+
 public class Cajeros extends Empleado {
   
   
@@ -7,7 +8,7 @@ public class Cajeros extends Empleado {
     }
   
     public double calcularSueldoMensual(){
-        return sueldoBasico;
+        return getSueldoBasico();
     }
 
 }
