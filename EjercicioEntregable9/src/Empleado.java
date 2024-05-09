@@ -3,20 +3,24 @@ public class Empleado {
     private String nombre;
     private String domicilio;
     private int fechaIngreso;
-    protected double sueldoBasico;
-
+    private final double sueldoBasico = 650000;
+    private String categoria;
     
-    public Empleado(String dni, String nombre, String domicilio, int fechaIngreso, double sueldoBasico) {
+    public Empleado(String dni, String nombre, String domicilio, int fechaIngreso, String categoria) {
         this.dni = dni;
         this.nombre = nombre;
         this.domicilio = domicilio;
         this.fechaIngreso = fechaIngreso;
-        this.sueldoBasico = sueldoBasico;    
+        this.categoria = categoria;
     }
 
-
     public void imprimirRecibo(){
-
+        System.out.println("nombre: " + getNombre());
+        System.out.println("DNI: " + getDni());
+        System.out.println("Domicilio: " + getDomicilio());
+        System.out.println("Fecha de ingreso: " + getFechaIngreso());
+        System.out.println("categoria: " + getcategoria());
+        System.out.println("Sueldo Basico: " + getSueldoBasico());
     }
 
 
@@ -54,22 +58,30 @@ public class Empleado {
         return fechaIngreso;
     }
 
+    public String getcategoria() {
+        return categoria;
+    }
+
+    public void setcategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
 
     public void setFechaIngreso(int fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 
-
-    public double getSueldoBasico() {
+   public double getSueldoBasico() {
         return sueldoBasico;
     }
 
-
-    public void setSueldoBasico(double sueldoBasico) {
-        this.sueldoBasico = sueldoBasico;
+    public String getCategoria() {
+        return categoria;
     }
 
-    
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+}
 
     
 

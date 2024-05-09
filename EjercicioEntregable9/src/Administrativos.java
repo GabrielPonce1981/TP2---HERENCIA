@@ -1,23 +1,34 @@
+
 public class Administrativos extends Empleado {
     public String jornadaLaboral;    
 
-        public Administrativos(String dni, String nombre,  String domicilio, int fechaIngreso, String jornadaLaboral, double sueldoBasico) {
-            super(dni, nombre, domicilio, fechaIngreso, sueldoBasico);
+        public Administrativos(String dni, String nombre,  String domicilio, int fechaIngreso, String categoria, String jornadaLaboral) {
+            super(dni, nombre, domicilio, fechaIngreso, categoria);
             this.jornadaLaboral = jornadaLaboral;
         }
 
+
         public double calcularSueldomensual() {
             if(jornadaLaboral.equalsIgnoreCase("completa")){
-                return sueldoBasico;
+                return getSueldoBasico();
             }
             else if(jornadaLaboral.equalsIgnoreCase("media jornada")){
-                return sueldoBasico/2;
+                return getSueldoBasico()/2;
             }
             else
             {
-                return sueldoBasico;
+                return getSueldoBasico();
             }
         }
+
+        @Override
+        public void imprimirRecibo() {
+            System.out.println("Recibo de sueldo Administrativo");
+            super.imprimirRecibo();
+            System.out.println("Sueldo Mensual: " + calcularSueldomensual());
+        }
+
+
 
         public String getJornadaLaboral() {
             return jornadaLaboral;
