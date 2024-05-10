@@ -11,7 +11,7 @@ public class Empleado {
         this.nombre = nombre;
         this.domicilio = domicilio;
         this.fechaIngreso = fechaIngreso;
-        this.sueldoBasico = sueldoBasico;  
+        this.categoria = categoria;
     }
 
     public void imprimirRecibo(){
