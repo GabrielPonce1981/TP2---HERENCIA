@@ -1,9 +1,7 @@
-
 public class Ejercicio2 {
-   
-    public static void imprimirRecibo(Empleado empleado){
+
+    public static void imprimirRecibo(Empleado empleado) {
         empleado.imprimirRecibo();
     }
 
-    
 }

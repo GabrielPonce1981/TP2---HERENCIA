@@ -5,7 +5,6 @@ public class Empleado {
     private int fechaIngreso;
     private final double sueldoBasico = 650000;
     private String categoria;
-    
     public Empleado(String dni, String nombre, String domicilio, int fechaIngreso, String categoria) {
         this.dni = dni;
         this.nombre = nombre;
@@ -14,7 +13,7 @@ public class Empleado {
         this.categoria = categoria;
     }
 
-    public void imprimirRecibo(){
+    public void imprimirRecibo() {
         System.out.println("nombre: " + getNombre());
         System.out.println("DNI: " + getDni());
         System.out.println("Domicilio: " + getDomicilio());
@@ -23,36 +22,29 @@ public class Empleado {
         System.out.println("Sueldo Basico: " + getSueldoBasico());
     }
 
-
     public String getDni() {
         return dni;
     }
-
 
     public void setDni(String dni) {
         this.dni = dni;
     }
 
-
     public String getNombre() {
         return nombre;
     }
-
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-
     public String getDomicilio() {
         return domicilio;
     }
 
-
     public void setDomicilio(String domicilio) {
         this.domicilio = domicilio;
     }
-
 
     public int getFechaIngreso() {
         return fechaIngreso;
@@ -66,12 +58,11 @@ public class Empleado {
         this.categoria = categoria;
     }
 
-
     public void setFechaIngreso(int fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 
-   public double getSueldoBasico() {
+    public double getSueldoBasico() {
         return sueldoBasico;
     }
 
@@ -81,10 +72,6 @@ public class Empleado {
 
     public void setCategoria(String categoria) {
         this.categoria = categoria;
-}
-
-    
-
-
+    }
 
 }

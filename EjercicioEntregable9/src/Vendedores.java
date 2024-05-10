@@ -3,7 +3,7 @@ public class Vendedores extends Empleado {
     private double ventasMensuales;
     private final double comision = 1.005;
 
-    public Vendedores(String dni, String nombre, String domicilio, int fechaIngreso, String categoria,double ventasMensuales) {
+    public Vendedores(String dni, String nombre, String domicilio, int fechaIngreso, String categoria, double ventasMensuales) {
         super(dni, nombre, domicilio, fechaIngreso, categoria);
         this.ventasMensuales = ventasMensuales;
     }
@@ -30,7 +30,7 @@ public class Vendedores extends Empleado {
 
     public void setVentasMensuales(double ventasMensuales) {
         this.ventasMensuales = ventasMensuales;
-    
+
     }
 
     public double getComision() {
