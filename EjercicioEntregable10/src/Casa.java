@@ -1,11 +1,10 @@
 public class Casa extends Inmueble {
-
-  public int numeroHabitaciones;
-  public int numeroBanios;
+  private int numeroHabitaciones;
+  private int numeroBanios;
 
   //Constructor
-  public Casa(float valorM2, float tamanioM2, int numeroHabitaciones, int numeroBanios) {
-    super(valorM2, tamanioM2);
+  public Casa( char[] id, float valorM2, float tamanioM2, String direccion, int numeroHabitaciones, int numeroBanios) {
+    super(id, valorM2, tamanioM2, direccion);
     this.numeroHabitaciones = numeroHabitaciones;
     this.numeroBanios = numeroBanios;
   }
