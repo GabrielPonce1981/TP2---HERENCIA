@@ -24,9 +24,6 @@ public class Inmueble {
   }
 
 
-  public void calcularPrecioVenta() {
-  }
-
   public char[] getId() {
     return id;
   }

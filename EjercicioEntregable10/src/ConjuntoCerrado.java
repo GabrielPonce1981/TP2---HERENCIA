@@ -1,4 +1,4 @@
-public class ConjuntoCerrado extends Casa {
+public class ConjuntoCerrado extends Vivienda {
 
   public float valorAdministracion;
   public boolean incluyeAreasComunes;

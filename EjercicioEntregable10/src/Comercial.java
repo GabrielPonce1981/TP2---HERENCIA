@@ -8,7 +8,6 @@ public class Comercial extends Inmueble {
     this.aLaCalle = aLaCalle;
   }
 
-  public void imprimir() {
-  }
+  
 
 }
