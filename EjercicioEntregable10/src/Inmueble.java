@@ -1,12 +1,12 @@
 public class Inmueble {
 
-  private char id [] = new char[5];
+  private int id;
   private float valorM2;
   private float tamanioM2;
   private String direccion;
 
   //Constructor
-  public Inmueble(char[] id , float valorM2, float tamanioM2, String direccion) {
+  public Inmueble(int id , float valorM2, float tamanioM2, String direccion) {
     this.id = id;
     this.valorM2 = valorM2;
     this.tamanioM2 = tamanioM2;
@@ -14,21 +14,27 @@ public class Inmueble {
     
   }
   
-  public void imprimir() {
-    System.out.println("ID Inmueble: " + String.valueOf(id));
-    System.out.println("Valor en metros cuadrados: " + valorM2);
-    System.out.println("Tamanio en metros cuadrados: " + tamanioM2);
-    System.out.println("Direccion: " + direccion);
+  public float calcularPrecioInmueble() {
+    return getValorM2() * getTamanioM2();
+  }
 
+ 
+ 
+  public void imprimir() {
+    System.out.println("ID Inmueble: " + getId());
+    System.out.println("Valor en metros cuadrados: " + getValorM2());
+    System.out.println("Tamanio en metros cuadrados: " + getTamanioM2());
+    System.out.println("Direccion: " + getDireccion());
+    System.out.println("Precio de venta: " + calcularPrecioInmueble());
 
   }
 
 
-  public char[] getId() {
+  public int getId() {
     return id;
   }
 
-  public void setId(char[] id) {
+  public void setId(int id) {
     this.id = id;
   }
 
