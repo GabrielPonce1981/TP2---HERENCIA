@@ -1,6 +1,5 @@
 public class Comercial extends Inmueble {
-
-  public boolean aLaCalle;
+    public boolean aLaCalle;
   
   //Constructor
   public Comercial(int id, float valorM2, float tamanioM2, boolean aLaCalle, String direccion) {
@@ -17,5 +16,4 @@ public class Comercial extends Inmueble {
   }
 
   
-
 }
