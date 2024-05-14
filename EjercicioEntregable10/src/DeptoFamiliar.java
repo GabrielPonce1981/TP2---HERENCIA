@@ -1,11 +1,15 @@
 public class DeptoFamiliar extends Apartamento {
-
-  //Constructor
-  public DeptoFamiliar(float valorM2, float tamanioM2, int numeroHabitaciones, int numeroBanios) {
-    super(valorM2, tamanioM2, numeroHabitaciones, numeroBanios);
-  }
-
-  public void imprimir() {
-  }
-
+    public DeptoFamiliar(int id, double valorM2, double tamanioM2, String direccion, int numeroHabitaciones, int numeroBanios) {
+        super(id, valorM2, tamanioM2, direccion, numeroHabitaciones, numeroBanios );
+      }
+    
+      @Override
+      public void imprimir() {
+        System.out.println("Imprimiendo datos de la Depto Familiar ");
+        super.imprimir();
+        System.out.println("Numero de habitaciones: " + getNumeroHabitaciones());
+        System.out.println("Numero de banios: " + getNumeroBanios());
+        System.out.println("Precio de venta: " + calcularPrecioInmueble());
+      }
+    
 }

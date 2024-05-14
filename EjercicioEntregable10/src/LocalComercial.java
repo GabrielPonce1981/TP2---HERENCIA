@@ -1,14 +1,30 @@
 public class LocalComercial extends Comercial {
+    public String centroComercial;
 
-  public String centroComercial;
+    public LocalComercial(int id, double valorM2, double tamanioM2, boolean aLaCalle, String direccion,
+        String centroComercial) {
+      super(id, valorM2, tamanioM2, aLaCalle, direccion);
+      this.centroComercial = centroComercial;
+    }
 
-  //Constructor
-  public LocalComercial(float valorM2, float tamanioM2, boolean aLaCalle, String centroComercial) {
-    super(valorM2, tamanioM2, aLaCalle);
-    this.centroComercial = centroComercial;
-  }
-
-  public void imprimir() {
-  }
-
+    @Override  
+    public void imprimir() {
+      System.out.println("Imprimiendo datos de Local Comercial");
+      super.imprimir();
+      System.out.println("Centro Comercial: " + getCentroComercial());
+      System.out.println("Local a la calle: " + getaLaCalle());
+      System.out.println("Precio de venta: " + calcularPrecioInmueble());
+  
+    }
+  
+    public String getCentroComercial() {
+      return centroComercial;
+    }
+  
+    public void setCentroComercial(String centroComercial) {
+      this.centroComercial = centroComercial;
+    }
+  
+    
+  
 }

@@ -1,16 +1,7 @@
-public class Apartamento extends Inmueble {
+public class Apartamento extends Vivienda {
 
-  public int numeroHabitaciones;
-  public int numeroBanios;
+    public Apartamento(int id, double valorM2, double tamanioM2, String direccion, int numeroHabitaciones, int numeroBanios) {
+      super(id, valorM2, tamanioM2, direccion, numeroHabitaciones, numeroBanios);
+    }
 
-  //Constructor
-  public Apartamento(float valorM2, float tamanioM2, Integer numeroHabitaciones, Integer numeroBanios) {
-    super(valorM2, tamanioM2);
-    this.numeroHabitaciones = numeroHabitaciones;
-    this.numeroBanios = numeroBanios;
   }
-
-  public void imprimir() {
-  }
-
-}

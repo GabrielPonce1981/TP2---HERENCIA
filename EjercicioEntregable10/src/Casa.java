@@ -1,16 +1,10 @@
-public class Casa extends Inmueble {
+public class Casa extends Vivienda{
+    public Casa( int id, double valorM2, double tamanioM2, String direccion, int numeroHabitaciones, int numeroBanios) {
+        super(id, valorM2, tamanioM2, direccion, numeroHabitaciones, numeroBanios);
+    }
 
-  public int numeroHabitaciones;
-  public int numeroBanios;
-
-  //Constructor
-  public Casa(float valorM2, float tamanioM2, int numeroHabitaciones, int numeroBanios) {
-    super(valorM2, tamanioM2);
-    this.numeroHabitaciones = numeroHabitaciones;
-    this.numeroBanios = numeroBanios;
-  }
-  
-  public void imprimir() {
-  }
-
+    @Override
+    public void imprimir() {
+        super.imprimir();  
+    }
 }

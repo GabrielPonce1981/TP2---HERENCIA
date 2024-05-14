@@ -1,11 +1,13 @@
 public class Oficina extends Comercial {
-
-  //Constructor
-  public Oficina(float valorM2, float tamanioM2, boolean aLaCalle, String localizacion, String centroComercial) {
-    super(valorM2, tamanioM2, aLaCalle);
-  }
-
-  public void imprimir() {
-  }
-
+    public Oficina(int id, double valorM2, double tamanioM2, String direccion, boolean aLaCalle) {
+        super(id, valorM2, tamanioM2, aLaCalle, direccion);
+      }
+    
+      @Override
+      public void imprimir() {
+        System.out.println("Imprimiendo datos de la Oficina ");
+        super.imprimir();
+        System.out.println("Precio de venta: " + calcularPrecioInmueble());
+    
+      }
 }

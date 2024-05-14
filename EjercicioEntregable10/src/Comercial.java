@@ -1,14 +1,18 @@
 public class Comercial extends Inmueble {
-
-  public boolean aLaCalle;
-
+    public boolean aLaCalle;
+  
   //Constructor
-  public Comercial(float valorM2, float tamanioM2, boolean aLaCalle) {
-    super(valorM2, tamanioM2);
+  public Comercial(int id, double valorM2, double tamanioM2, boolean aLaCalle, String direccion) {
+    super(id, valorM2, tamanioM2, direccion);
     this.aLaCalle = aLaCalle;
   }
 
-  public void imprimir() {
+  public boolean getaLaCalle() {
+    return aLaCalle;
+  }
+
+  public void setaLaCalle(boolean aLaCalle) {
+    this.aLaCalle = aLaCalle;
   }
 
 }
