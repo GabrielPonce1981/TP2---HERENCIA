@@ -24,5 +24,4 @@ public class Vivienda extends Inmueble {
     public void setNumeroBanios(int numeroBanios) {
       this.numeroBanios = numeroBanios;
     }
-
 }
