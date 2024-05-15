@@ -10,4 +10,11 @@ public class Cajeros extends Empleado {
         return getSueldoBasico();
     }
 
+    @Override
+    public void imprimirRecibo() {
+        System.out.println("Recibo de sueldo Cajero");
+        super.imprimirRecibo();
+        System.out.println("Sueldo Mensual: " + calcularSueldoMensual());
+    }
+
 }
